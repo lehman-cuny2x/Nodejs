@@ -5,7 +5,7 @@ let app = express();
 
 // "/" - routes
 
-app.get("/home", function(request, response){
+app.get(["/", "/home", "/hi"], function(request, response){
     console.log("got a request of /")
     response.send("home")
 })
