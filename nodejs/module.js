@@ -5,4 +5,6 @@
 
 // console.log('Close----I dont have to wait!')
 
-exports.foo = 'bar'
+// exports.foo = 'bar'
+
+module.exports = 'hello'
