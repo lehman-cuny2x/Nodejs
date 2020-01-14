@@ -3,10 +3,20 @@ let express = require("express")
 //We are creating an express app
 let app = express();
 
-app.get("/", function(request, response){
+// "/" - routes
+
+app.get("/home", function(request, response){
+    console.log("got a request of /")
+    response.send("home")
+})
+
+app.get("/helloworld", function(request, response){
     console.log("got a request of /")
     response.send("hello world")
 })
+
+
+
 
 //http://localhost:3000/hello gives error
 app.get("*", function(request, response){
