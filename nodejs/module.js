@@ -9,9 +9,15 @@
 
 
 function helloWorld(){
-    return 'Hello World!'
+    return 'Hello'
 }
 
 // module.exports = helloWorld()
 
-module.exports = helloWorld
+
+
+function helloPerson(name){
+    return `${name}`
+}
+
+module.exports = { World:helloWorld, Person: helloPerson}
