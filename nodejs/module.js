@@ -7,4 +7,9 @@
 
 // exports.foo = 'bar'
 
-module.exports = 'hello'
+
+function helloWorld(){
+    return 'Hello World!'
+}
+
+module.exports = helloWorld()
